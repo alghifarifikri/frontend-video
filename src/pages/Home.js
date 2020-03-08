@@ -53,7 +53,7 @@ class Home extends React.Component {
         return (
             <div>
                 <Navbar islogin={this.state.isLogin} />
-       <div className="jumbotron">
+       <div className="jumbotron" >
            <div className="container">
             <marquee>
                 <h1>
@@ -62,7 +62,7 @@ class Home extends React.Component {
             </marquee>
         </div>
       </div>
-            <div className="container mb-10">
+            <div className="container">
                {
                     this.state.movies.map((v) => {
                         return(

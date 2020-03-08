@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Component, Fragment } from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
@@ -19,7 +20,7 @@ export default class Navbar extends Component {
   componentDidMount() {
 
     let login = localStorage.getItem('Login'); 
-        if(login == '1'){
+        if(login === '1'){
             this.setState({
                 isLogin: '1'
             });
@@ -44,7 +45,7 @@ export default class Navbar extends Component {
     try{
         let email = localStorage.getItem('email');
         let id = localStorage.getItem('id');
-        const response = await axios({
+        await axios({
             method: 'delete',
             url: API_URL+'/user',
             data: {
@@ -109,11 +110,11 @@ export default class Navbar extends Component {
                     <nav className="fixed-top navbar navbar-light bg-light ">
                     <div className="container">
                     <Link to ={'/'} className="navbar-brand">
-                    <img src="https://www.pinclipart.com/picdir/middle/328-3280268_home-red-home-icon-png-clipart.png" width="30" height="30" className="d-inline-block align-top mr-2"/>
-                    Funny Movies
+                    <img src="https://www.pinclipart.com/picdir/big/133-1332651_illustration-of-a-red-pepper-home-button-png.png" width="30" height="30" className="d-inline-block align-top mr-2"/>
+                    FunnyMovies.com
                     </Link>
-                    <div className="form-inline">
-                    <h4 className="mr-2 mb-2">Welcome {user}</h4>
+                      <div className="form-inline">
+                      <h4 className="mr-2 mb-2">Welcome {user}</h4>
                     <Link to={'/video'}>
                             <button 
                                 type="button" 
@@ -137,8 +138,8 @@ export default class Navbar extends Component {
                     <nav className=" fixed-top navbar navbar-light bg-light">
         <div className="container">
         <Link to ={'/'} className="navbar-brand">
-        <img src="https://www.pinclipart.com/picdir/middle/328-3280268_home-red-home-icon-png-clipart.png" width="30" height="30" className="d-inline-block align-top mr-2"/>
-        Funny Movies
+        <img src="https://www.pinclipart.com/picdir/big/133-1332651_illustration-of-a-red-pepper-home-button-png.png" width="30" height="30" className="d-inline-block align-top mr-2"/>
+        FunnyMovies.com
       </Link>
             <div class="form-inline">
             <input className="input mr-sm-2"  type="text" 
