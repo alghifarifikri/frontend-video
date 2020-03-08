@@ -29,10 +29,10 @@ FunnyMovies.com is a website for sharing video from Youtube
 ## Screenshots
   <p align="center">
     <span>
-      <image width="300" src="./ss/1.PNG" />
-      <image width="300" src="./ss/2.PNG" />
-      <image width="300" src="./ss/3.PNG" />
-      <image width="300" src="./ss/4.PNG" />
+      <image width="300" src="./ss/1.png" />
+      <image width="300" src="./ss/2.png" />
+      <image width="300" src="./ss/3.png" />
+      <image width="300" src="./ss/4.png" />
     </span>
   </p>
   
